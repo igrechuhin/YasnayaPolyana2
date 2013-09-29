@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Звуки</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="css/9_v.css" media="all and (orientation:portrait)" rel="stylesheet" type="text/css" />
 		<link href="css/9_h.css" media="all and (orientation:landscape)" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="js/script.js"></script>
@@ -10,10 +11,10 @@
 	<body id="Main-page_h">
         <div id="playing-sound"></div>
 		<div class="Basic-Text-Frame">
-			<p class="Zag big-text">Звуки<br />Ясной Поляны</p>
+			<p class="head-text"><span class="underline">Звуки Ясной Поляны</span></p>
             
-            <p class="med-text">
-            Современный аудиопортрет Музея-усадьбы Л.Н. Толстого, который мы представляем вашему вниманию, был создан в полях, лесах и садах Ясной Поляны в августе 2012 года в ходе подготовки &laquo;Музейного гида&raquo;.
+            <p class="med-text sound-text">
+            Современный аудиопортрет Музея-усадьбы Л.Н.&nbsp;Толстого, который мы представляем вашему вниманию, был создан в&nbsp;полях, лесах и&nbsp;садах Ясной&nbsp;Поляны в&nbsp;августе 2012&nbsp;года в&nbsp;ходе подготовки &laquo;Музейного гида&raquo;.
             </p>
             
             <div id="sound-frame">
@@ -22,63 +23,63 @@
                     <canvas id="canvas-1" class="canvas" onclick="playSound(1);"></canvas>
                     <img id="sound-stop-1" src="image/sound_stop.png" onclick="playSound(1);" />
                     <audio id="sound-1" src="sound/sound_1.mp3" onplaying="playingIsStarted(1);" onended="soundIsStopped(1)"></audio>
-                    <p class="img-caption">Нижний пруд в грозу</p>
+                    <p class="img-caption med-text">Нижний пруд в грозу</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_2.jpg" alt="sound" />
                     <canvas id="canvas-2" class="canvas" onclick="playSound(2);"></canvas>
                     <img id="sound-stop-2" src="image/sound_stop.png" onclick="playSound(2);" />
                     <audio id="sound-2" src="sound/sound_2.mp3" onplaying="playingIsStarted(2);" onended="soundIsStopped(2)"></audio>
-                    <p class="img-caption">Обитатели Прешпекта</p>
+                    <p class="img-caption med-text">Обитатели Прешпекта</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_3.jpg" alt="sound" />
                     <canvas id="canvas-3" class="canvas" onclick="playSound(3);"></canvas>
                     <img id="sound-stop-3" src="image/sound_stop.png" onclick="playSound(3);" />
                     <audio id="sound-3" src="sound/sound_3.mp3" onplaying="playingIsStarted(3);" onended="soundIsStopped(3)"></audio>
-                    <p class="img-caption">У дома Л.Н. Толстого</p>
+                    <p class="img-caption med-text">У дома Л.Н. Толстого</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_4.jpg" alt="sound" />
                     <canvas id="canvas-4" class="canvas" onclick="playSound(4);"></canvas>
                     <img id="sound-stop-4" src="image/sound_stop.png" onclick="playSound(4);" />
                     <audio id="sound-4" src="sound/sound_4.mp3" onplaying="playingIsStarted(4);" onended="soundIsStopped(4)"></audio>
-                    <p class="img-caption">Лошади в яблоневом саду</p>
+                    <p class="img-caption med-text">Лошади в яблоневом саду</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_5.jpg" alt="sound" />
                     <canvas id="canvas-5" class="canvas" onclick="playSound(5);"></canvas>
                     <img id="sound-stop-5" src="image/sound_stop.png" onclick="playSound(5);" />
                     <audio id="sound-5" src="sound/sound_5.mp3" onplaying="playingIsStarted(5);" onended="soundIsStopped(5)"></audio>
-                    <p class="img-caption">В комнатах Ясной Поляны</p>
+                    <p class="img-caption med-text">В комнатах Ясной Поляны</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_6.jpg" alt="sound" />
                     <canvas id="canvas-6" class="canvas" onclick="playSound(6);"></canvas>
                     <img id="sound-stop-6" src="image/sound_stop.png" onclick="playSound(6);" />
                     <audio id="sound-6" src="sound/sound_6.mp3" onplaying="playingIsStarted(6);" onended="soundIsStopped(6)"></audio>
-                    <p class="img-caption">Гуси у дома Волконского</p>
+                    <p class="img-caption med-text">Гуси у дома Волконского</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_7.jpg" alt="sound" />
                     <canvas id="canvas-7" class="canvas" onclick="playSound(7);"></canvas>
                     <img id="sound-stop-7" src="image/sound_stop.png" onclick="playSound(7);" />
                     <audio id="sound-7" src="sound/sound_7.mp3" onplaying="playingIsStarted(7);" onended="soundIsStopped(7)"></audio>
-                    <p class="img-caption">Повозка</p>
+                    <p class="img-caption med-text">Повозка</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_8.jpg" alt="sound" />
                     <canvas id="canvas-8" class="canvas" onclick="playSound(8);"></canvas>
                     <img id="sound-stop-8" src="image/sound_stop.png" onclick="playSound(8);" />
                     <audio id="sound-8" src="sound/sound_8.mp3" onplaying="playingIsStarted(8);" onended="soundIsStopped(8)"></audio>
-                    <p class="img-caption">На пасеке</p>
+                    <p class="img-caption med-text">На пасеке</p>
                 </div>
                 <div class="sound-block">
                     <img class="sound-img" src="image/snd_9.jpg" alt="sound" />
                     <canvas id="canvas-9" class="canvas" onclick="playSound(9);"></canvas>
                     <img id="sound-stop-9" src="image/sound_stop.png" onclick="playSound(9);" />
                     <audio id="sound-9" src="sound/sound_9.mp3" onplaying="playingIsStarted(9);" onended="soundIsStopped(9)"></audio>
-                    <p class="img-caption">Дубовая аллея</p>
+                    <p class="img-caption med-text">Дубовая аллея</p>
                 </div>
                 <div class="clear"></div>
             </div>

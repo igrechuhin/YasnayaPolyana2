@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WebViewController.h"
+#import "RootViewController.h"
 
 static NSUInteger kNumberOfPages = 11;
 
@@ -29,7 +30,7 @@ static NSUInteger kNumberOfPages = 11;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIViewController *rootController = [UIViewController new];
+    RootViewController *rootController = [RootViewController new];
     self.window.rootViewController = rootController;
     
     NSMutableArray *controllers = [[NSMutableArray alloc] init];

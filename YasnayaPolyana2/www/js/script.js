@@ -28,8 +28,8 @@ var prevPage = 1;
 function scrollStory()
 {
     var s = document.getElementById('story');
-    var c = Math.round(s.scrollHeight / 10);
-    var page = Math.max(Math.floor(s.scrollTop / c) + 1, 1);
+    var c = Math.floor((s.scrollHeight - s.clientHeight) / 10);
+    var page = Math.min(Math.max(Math.floor(s.scrollTop / c) + 1, 1), 10);
     if (page != window.prevPage)
     {
         var b = document.getElementById('moving-block-' + page);

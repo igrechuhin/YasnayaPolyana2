@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C37279017F89CB200E349DD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37278F17F89CB200E349DD /* RootViewController.m */; };
 		1C972B99174BEFE50042B0B1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C972B98174BEFE50042B0B1 /* MediaPlayer.framework */; };
 		1C972B9B174C18C60042B0B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C972B9A174C18C60042B0B1 /* QuartzCore.framework */; };
 		1C972B9E174C19B70042B0B1 /* JAPanoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C972B9D174C19B70042B0B1 /* JAPanoView.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C37278E17F89CB200E349DD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1C37278F17F89CB200E349DD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		1C972B98174BEFE50042B0B1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1C972B9A174C18C60042B0B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1C972B9C174C19B70042B0B1 /* JAPanoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAPanoView.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				1C972B9D174C19B70042B0B1 /* JAPanoView.m */,
 				1C972BA317567D420042B0B1 /* ModalImageView.h */,
 				1C972BA417567D420042B0B1 /* ModalImageView.m */,
+				1C37278E17F89CB200E349DD /* RootViewController.h */,
+				1C37278F17F89CB200E349DD /* RootViewController.m */,
 			);
 			path = YasnayaPolyana2;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 			files = (
 				1CE94BA517313ED600A12418 /* main.m in Sources */,
 				1CE94BA917313ED600A12418 /* AppDelegate.m in Sources */,
+				1C37279017F89CB200E349DD /* RootViewController.m in Sources */,
 				1CE94BCF173150BD00A12418 /* WebViewController.m in Sources */,
 				1C972B9E174C19B70042B0B1 /* JAPanoView.m in Sources */,
 				1C972BA517567D420042B0B1 /* ModalImageView.m in Sources */,

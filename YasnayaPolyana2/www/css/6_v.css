@@ -32,7 +32,7 @@ div.moving-block {
     opacity: 0;
     position: relative;
     top: -4000px;
-    width: 1450px;
+    width: 1350px;
     height: 780px;
     background-color: white;
 }
@@ -45,7 +45,7 @@ div.clear {
 }
 div#story {
     padding-right: 100px;
-    height: 900px;
+    height: 860px;
     overflow: auto;
     -webkit-overflow-scrolling:touch;
 }

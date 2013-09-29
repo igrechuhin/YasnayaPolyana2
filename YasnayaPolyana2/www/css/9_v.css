@@ -1,38 +1,15 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
-	margin:0;
-	padding:0;
-	border-width:0;
-}
-a {
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
 body {
 	background-color: white;
 	width: 1536px;
 	height: 2048px;
 }
-@font-face {
-	font-family: "PT Sans Pro Cond Demi";
-	src: url(../fonts/PTS67.ttf) format("truetype");
-}
 div.Basic-Text-Frame {
 	padding-left: 100px;
 }
-p.Zag {
-	font-family:"PT Sans Pro Cond Demi", sans-serif;
-	line-height:1.3;
-}
-p.big-text {
-	font-size:86px;
-	text-decoration:underline;
-	padding-top: 60px;
-	line-height:1;
-}
-p.med-text {
-    padding-top: 60px;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 32px;
-    widht: 800px;
+p.sound-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 1350px;
 }
 div.clear {
     clear: both;
@@ -46,14 +23,12 @@ div.sound-block {
     background-color: #fff;
 }
 .img-caption {
-    font-family: Helvetica, Arial, sans-serif;
-	font-size:32px;
-    padding-top: 20px;
+    margin-top: -10px;
 }
 #canvas-1 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 123px;
     width: 400px;
     height: 400px;
@@ -62,14 +37,14 @@ div.sound-block {
 #sound-stop-1 {
     display: none;
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 123px;
     z-index: 99;
 }
 #canvas-2 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 575px;
     width: 400px;
     height: 400px;
@@ -78,14 +53,14 @@ div.sound-block {
 #sound-stop-2 {
     display: none;
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 575px;
     z-index: 99;
 }
 #canvas-3 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 1025px;
     width: 400px;
     height: 400px;
@@ -94,7 +69,7 @@ div.sound-block {
 #sound-stop-3 {
     display: none;
     position: absolute;
-    top: 446px;
+    top: 466px;
     left: 1025px;
     z-index: 99;
 }
@@ -149,7 +124,7 @@ div.sound-block {
 #canvas-7 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 125px;
     width: 400px;
     height: 400px;
@@ -158,14 +133,14 @@ div.sound-block {
 #sound-stop-7 {
     display: none;
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 125px;
     z-index: 99;
 }
 #canvas-8 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 575px;
     width: 400px;
     height: 400px;
@@ -174,14 +149,14 @@ div.sound-block {
 #sound-stop-8 {
     display: none;
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 575px;
     z-index: 99;
 }
 #canvas-9 {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 1025px;
     width: 400px;
     height: 400px;
@@ -190,7 +165,7 @@ div.sound-block {
 #sound-stop-9 {
     display: none;
     position: absolute;
-    top: 1494px;
+    top: 1470px;
     left: 1025px;
     z-index: 99;
 }
