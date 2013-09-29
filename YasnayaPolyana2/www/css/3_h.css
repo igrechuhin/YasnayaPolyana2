@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+	width: 2048px;
+	height: 1536px;
+}
+div.Basic-Text-Frame {
+	padding-left: 100px;
+    padding-right: 100px;
+}
+img.video-img {
+    position: absolute;
+    top: 200px;
+    left: 720px;
+}
+p.head-text {
+    width: 500px;
+}
+p.med-text {
+    width: 500px;
+    padding-top: 100px;
+}

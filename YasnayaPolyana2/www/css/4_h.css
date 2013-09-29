@@ -1,0 +1,23 @@
+body {
+	background-color: white;
+	width: 2048px;
+	height: 1536px;
+}
+div.Basic-Text-Frame {
+	padding-left: 100px;
+    padding-right: 100px;
+}
+p.head-text {
+    width: 400px;
+}
+p.sub-h {
+    font-family:"PT Sans Pro Cond Demi", sans-serif;
+	font-size:34px;
+    padding-top: 20px;
+    width: 400px;
+}
+img.map-img {
+    position: absolute;
+	top: 80px;
+    left: 600px;
+}

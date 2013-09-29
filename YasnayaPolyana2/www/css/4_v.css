@@ -1,0 +1,33 @@
+body {
+	background-color: white;
+	width: 1536px;
+	height: 2048px;
+}
+div.Basic-Text-Frame {
+	padding-left: 100px;
+    padding-right: 100px;
+}
+p.sub-h {
+    font-family:"PT Sans Pro Cond Demi", sans-serif;
+	font-size:34px;
+    padding-top: 20px;
+}
+span.space {
+    padding-left: 16px;
+}
+img.map-img {
+	padding-top: 220px;
+}
+img.map-info-img {
+    position: absolute;
+    -webkit-transition: opacity 0.5s linear;
+}
+img#map-empty {
+    top: -4000px;
+    opacity: 0;
+}
+img#map-1 {
+    top: 582px;
+    left: 514px;
+    opacity: 1;
+}

@@ -1,0 +1,48 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+a, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+@font-face {
+	font-family: "PT Sans Pro Cond Demi";
+	src: url(../fonts/PTS67.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "PT Sans Regular";
+	src: url(../fonts/ptsans.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "PT Serif Regular";
+	src: url(../fonts/PTF55F.ttf) format("truetype");
+}
+
+p.head-text {
+	font-family:"PT Sans Pro Cond Demi", sans-serif;
+	font-size:86px;
+	padding-top: 60px;
+	line-height:1;
+}
+
+p.med-text {
+	font-family:"PT Serif Regular", sans-serif;
+	font-size:34px;
+}
+
+p.small-text {
+	font-family:"PT Sans Regular", sans-serif;
+	font-size:28px;
+    line-height:1.15;
+}
+
+span.underline {
+    border-bottom: 4px solid black;
+    display: inline-block;
+    height: 84px;
+}

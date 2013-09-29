@@ -1,0 +1,15 @@
+body {
+	background-color: white;
+	width: 1536px;
+	height: 2048px;
+}
+div.Basic-Text-Frame {
+	padding-left: 100px;
+    padding-right: 100px;
+}
+span.space {
+    padding-left: 16px;
+}
+img.video-img {
+	padding: 150px 60px 220px;
+}

@@ -1,0 +1,37 @@
+body {
+	background-color: white;
+	width: 1536px;
+	height: 2048px;
+}
+div.Basic-Text-Frame {
+	padding-left: 100px;
+    padding-right: 100px;
+}
+div.columns {
+    -webkit-column-count: 2;
+    -webkit-column-width: 550px;
+    -webkit-column-gap: 100px;
+    padding-top: 100px;
+}
+div.columns h2 {
+    font-size: 48px;
+    font-family:"PT Sans Pro Cond Demi", sans-serif;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 30px;
+}
+p.small-text{
+    text-indent: 30px;
+}
+p.signiture {
+	font-family:"PT Sans Pro Cond Demi", sans-serif;
+	font-size:28px;
+    padding-left: 30px;
+    padding-top: 25px;
+    line-height: 1.0;
+}
+img.mus-gid-black-img {
+	position: absolute;
+	top: 60px;
+    left: 1300px;
+}
