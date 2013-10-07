@@ -23,7 +23,7 @@ function mapTouched(event)
 {
     var x = event.touches[0].pageX;
     var y = event.touches[0].pageY;
-    alert('x: ' + x + ' y: ' + y);
+    //alert('x: ' + x + ' y: ' + y);
     if (infoShown != 0)
     {
         i=document.getElementById('map-info-'+infoShown);

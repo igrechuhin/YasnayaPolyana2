@@ -38,13 +38,95 @@ img#map-info-2 {
     top: 986px;
     left: 644px;
 }
+img#map-info-3 {
+    top: 854px;
+    left: 292px;
+}
+img#map-info-4 {
+    top: 984px;
+    left: 458px;
+}
+img#map-info-5 {
+    top: 978px;
+    left: 626px;
+}
+img#map-info-6 {
+    top: 956px;
+    left: 472px;
+}
+img#map-info-7 {
+    top: 976px;
+    left: 532px;
+}
+img#map-info-8 {
+    top: 1130px;
+    left: 236px;
+}
+img#map-info-9 {
+    top: 1170px;
+    left: 488px;
+}
+img#map-info-10 {
+    top: 1170px;
+    left: 484px;
+}
+img#map-info-11 {
+    top: 1200px;
+    left: 524px;
+}
+img#map-info-12 {
+    top: 1190px;
+    left: 546px;
+}
+img#map-info-13 {
+    top: 1212px;
+    left: 588px;
+}
+img#map-info-14 {
+    top: 1240px;
+    left: 288px;
+}
+img#map-info-15 {
+    top: 1266px;
+    left: 500px;
+}
+img#map-info-16 {
+    top: 1304px;
+    left: 396px;
+}
+img#map-info-17 {
+    top: 1442px;
+    left: 270px;
+}
+img#map-info-18 {
+    top: 1448px;
+    left: 466px;
+}
+img#map-info-19 {
+    top: 1432px;
+    left: 618px;
+}
+img#map-info-20 {
+    top: 1510px;
+    left: 428px;
+}
+img#map-info-21 {
+    top: 1522px;
+    left: 552px;
+}
+img#map-info-22 {
+    top: 1542px;
+    left: 906px;
+}
+img#map-info-23 {
+    top: 1538px;
+    left: 912px;
+}
 
 div.map-button {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: green;
-    opacity: 0.5;
 }
 
 div#map-btn-1 {
