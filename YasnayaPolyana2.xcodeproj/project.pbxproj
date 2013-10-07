@@ -253,6 +253,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = pbsputnik;
+				TargetAttributes = {
+					1CE94B9417313ED600A12418 = {
+						DevelopmentTeam = VZJ26AAYCG;
+					};
+				};
 			};
 			buildConfigurationList = 1CE94B9017313ED600A12418 /* Build configuration list for PBXProject "YasnayaPolyana2" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -431,6 +436,7 @@
 		1CE94BC817313ED600A12418 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergey Umnov (8986C3Z3PQ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YasnayaPolyana2/YasnayaPolyana2-Prefix.pch";
 				INFOPLIST_FILE = "YasnayaPolyana2/YasnayaPolyana2-Info.plist";
@@ -443,6 +449,7 @@
 		1CE94BC917313ED600A12418 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergey Umnov (8986C3Z3PQ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YasnayaPolyana2/YasnayaPolyana2-Prefix.pch";
 				INFOPLIST_FILE = "YasnayaPolyana2/YasnayaPolyana2-Info.plist";

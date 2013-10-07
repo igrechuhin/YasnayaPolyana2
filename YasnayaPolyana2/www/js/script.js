@@ -1,9 +1,30 @@
+function videoTouched(event)
+{
+    var x = event.touches[0].pageX;
+    var y = event.touches[0].pageY;
+    var i = document.getElementById('video-img');
+    var rect = i.getBoundingClientRect();
+    
+    var cir = {
+        x : rect.left + rect.width / 2,
+        y : rect.top + rect.width / 2,
+        r : rect.width / 2
+    }
+    var d = (x - cir.x)*(x - cir.x) + (y - cir.y)*(y - cir.y);
+    if (d <= cir.r * cir.r)
+    {
+        window.open('video://Page3.html/tolstoi');
+    }
+    //alert('center: ' + cir.x + ':' + cir.y + ' radius: ' + cir.r);
+}
+
+
 function mapTouched(event)
 {
     //if (event.touches[0]) alert ('event');
     var x = event.touches[0].pageX;
     var y = event.touches[0].pageY;
-    //alert('x: ' + x + ' y: ' + y);
+    alert('x: ' + x + ' y: ' + y);
 }
 
 function toggleFade()

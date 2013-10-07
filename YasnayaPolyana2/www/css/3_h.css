@@ -7,7 +7,7 @@ div.Basic-Text-Frame {
 	padding-left: 100px;
     padding-right: 100px;
 }
-img.video-img {
+.video-img {
     position: absolute;
     top: 200px;
     left: 720px;
