@@ -16,6 +16,13 @@ p.sub-h {
     padding-top: 20px;
     width: 400px;
 }
+div.help-text {
+    position: absolute;
+    left: 100px;
+    top: 1250px;
+    width: 400px;
+    text-align: left;
+}
 img.map-img {
     position: absolute;
 	top: 80px;

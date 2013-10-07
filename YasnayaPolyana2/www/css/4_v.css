@@ -15,19 +15,127 @@ p.sub-h {
 span.space {
     padding-left: 16px;
 }
+div.help-text {
+    position: absolute;
+    left: 940px;
+    top: 400px;
+    width: 500px;
+    text-align: right;
+}
 img.map-img {
-	padding-top: 220px;
+	padding-top: 370px;
 }
 img.map-info-img {
     position: absolute;
+    opacity: 0;
     -webkit-transition: opacity 0.5s linear;
 }
-img#map-empty {
-    top: -4000px;
-    opacity: 0;
+img#map-info-1 {
+    top: 722px;
+    left: 506px;
 }
-img#map-1 {
-    top: 582px;
-    left: 514px;
-    opacity: 1;
+img#map-info-2 {
+    top: 986px;
+    left: 644px;
+}
+
+div.map-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    opacity: 0.5;
+}
+
+div#map-btn-1 {
+    left: 1073px;
+    top: 676px;
+}
+div#map-btn-2 {
+    left: 1212px;
+    top: 944px;
+}
+div#map-btn-3 {
+    left: 424px;
+    top: 1174px;
+}
+div#map-btn-4 {
+    left: 634px;
+    top: 1304px;
+}
+div#map-btn-5 {
+    left: 806px;
+    top: 1298px;
+}
+div#map-btn-6 {
+    left: 850px;
+    top: 1276px;
+}
+div#map-btn-7 {
+    left: 978px;
+    top: 1294px;
+}
+div#map-btn-8 {
+    left: 570px;
+    top: 1448px;
+}
+div#map-btn-9 {
+    left: 702px;
+    top: 1490px;
+}
+div#map-btn-10 {
+    left: 750px;
+    top: 1490px;
+}
+div#map-btn-11 {
+    left: 860px;
+    top: 1524px;
+}
+div#map-btn-12 {
+    left: 942px;
+    top: 1512px;
+}
+div#map-btn-13 {
+    left: 1128px;
+    top: 1534px;
+}
+div#map-btn-14 {
+    left: 560px;
+    top: 1564px;
+}
+div#map-btn-15 {
+    left: 680px;
+    top: 1586px;
+}
+div#map-btn-16 {
+    left: 766px;
+    top: 1626px;
+}
+div#map-btn-17 {
+    left: 484px;
+    top: 1768px;
+}
+div#map-btn-18 {
+    left: 874px;
+    top: 1768px;
+}
+div#map-btn-19 {
+    left: 1196px;
+    top: 1756px;
+}
+div#map-btn-20 {
+    left: 836px;
+    top: 1832px;
+}
+div#map-btn-21 {
+    left: 914px;
+    top: 1842px;
+}
+div#map-btn-22 {
+    left: 1124px;
+    top: 1864px;
+}
+div#map-btn-23 {
+    left: 1292px;
+    top: 1860px;
 }

@@ -15,16 +15,31 @@ function videoTouched(event)
     {
         window.open('video://Page3.html/tolstoi');
     }
-    //alert('center: ' + cir.x + ':' + cir.y + ' radius: ' + cir.r);
 }
 
+var infoShown = 0;
 
 function mapTouched(event)
 {
-    //if (event.touches[0]) alert ('event');
     var x = event.touches[0].pageX;
     var y = event.touches[0].pageY;
     alert('x: ' + x + ' y: ' + y);
+    if (infoShown != 0)
+    {
+        i=document.getElementById('map-info-'+infoShown);
+        i.style.opacity = 0;
+        setTimeout(function(){infoShown = 0;}, 500);
+    }
+}
+
+function showMapInfo(n)
+{
+    i=document.getElementById('map-info-'+n);
+    if (infoShown == 0)
+    {
+        i.style.opacity = 1;
+        infoShown = n;
+    }
 }
 
 function toggleFade()

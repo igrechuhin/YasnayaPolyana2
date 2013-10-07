@@ -44,7 +44,7 @@ div.clear {
     clear: both;
 }
 div#story {
-    padding-right: 100px;
+    padding-right: 400px;
     height: 600px;
     overflow: auto;
     -webkit-overflow-scrolling:touch;
