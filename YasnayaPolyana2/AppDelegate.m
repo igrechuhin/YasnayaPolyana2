@@ -54,7 +54,7 @@ static NSUInteger kNumberOfPages = 11;
     scrollView.scrollsToTop = NO;
     scrollView.delegate = self;
     [self.window.rootViewController.view addSubview:scrollView];
-	
+    
     pageControl = [[UIPageControl alloc] init];
     pageControl.numberOfPages = kNumberOfPages;
     pageControl.currentPage = 0;
@@ -65,9 +65,25 @@ static NSUInteger kNumberOfPages = 11;
     [self loadScrollViewWithPage:1];
     
     pageControlUsed = NO;
+    
+    // initializing long press recognition
+    UILongPressGestureRecognizer *longPressRecognizer = [[UILongPressGestureRecognizer alloc]
+                           initWithTarget:self
+                           action:@selector(longPressDetected:)];
+    longPressRecognizer.minimumPressDuration = 0.5;
+    longPressRecognizer.numberOfTouchesRequired = 1;
+    longPressRecognizer.cancelsTouchesInView = YES;
+    longPressRecognizer.delegate = self;
+    [self.window addGestureRecognizer:longPressRecognizer];
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+
+- (void)longPressDetected:(UIGestureRecognizer *)sender
+{
+    [self changePageTo:0 animated:NO];
 }
 
 - (void)deviceOrientationDidChanged:(NSNotification*)note
@@ -245,6 +261,11 @@ static NSUInteger kNumberOfPages = 11;
         modalImageView.contentMode = UIViewContentModeScaleAspectFit;
         modalImageView.backgroundColor = [UIColor blackColor];
         [self.window.rootViewController.view addSubview:modalImageView];
+    }
+    else if ([command isEqual:@"http"])
+    {
+        [[UIApplication sharedApplication] openURL:[request URL]];
+        return NO;
     }
     else return YES;
     return NO;

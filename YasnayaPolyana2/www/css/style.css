@@ -2,6 +2,11 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, blockqu
 	margin:0;
 	padding:0;
 	border-width:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 }
 a, a:visited, a:link, a:active {
     text-decoration: none;

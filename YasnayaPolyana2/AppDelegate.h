@@ -11,7 +11,7 @@
 #import "JAPanoView.h"
 #import "ModalImageView.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate, UIWebViewDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate, UIWebViewDelegate, UIGestureRecognizerDelegate>
 {
     UIWindow *window;
     UIScrollView *scrollView;

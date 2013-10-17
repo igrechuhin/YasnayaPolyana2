@@ -39,6 +39,7 @@ function showMapInfo(n)
     {
         i.style.opacity = 1;
         infoShown = n;
+        event.cancelBubble=true;
     }
 }
 
