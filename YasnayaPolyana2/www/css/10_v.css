@@ -2,3 +2,8 @@ body {
 	width: 1536px;
 	height: 2048px;
 }
+
+img.socials {
+    widht: 160px;
+    z-index: 999;
+}

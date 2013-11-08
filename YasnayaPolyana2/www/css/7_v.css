@@ -26,7 +26,8 @@ p.small-text {
     padding-bottom: 30px;
 }
 span.strong-text {
-    font-weight: bold;
+    font-family:"PT Sans Pro Cond Demi", sans-serif;
+    font-size:30px;
 }
 span.italic-text {
     font-style: italic;

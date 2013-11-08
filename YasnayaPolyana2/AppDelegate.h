@@ -21,6 +21,7 @@
     JAPanoView *panoView;
     ModalImageView *modalImageView;
     BOOL pageControlUsed;
+    BOOL justLoaded;
 }
 
 @property (strong, nonatomic) UIWindow *window;

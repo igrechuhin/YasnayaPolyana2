@@ -25,6 +25,8 @@ static NSUInteger kNumberOfPages = 11;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    justLoaded = YES;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mediaPlayerDidExitFullScreen:) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
     
@@ -88,6 +90,12 @@ static NSUInteger kNumberOfPages = 11;
 
 - (void)deviceOrientationDidChanged:(NSNotification*)note
 {
+    if (justLoaded)
+    {
+        justLoaded = NO;
+        return;
+    }
+    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     UIDeviceOrientation deviceOrientation = [[note object] orientation];
     if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
@@ -100,12 +108,14 @@ static NSUInteger kNumberOfPages = 11;
 
     // устанавливаем флаг, чтобы игнорировать события скроллинга во время поворота экрана
     pageControlUsed = YES;
-
+    
     scrollView.frame = screenBounds;
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * kNumberOfPages, scrollView.frame.size.height);
     
     if (panoView != nil) panoView.frame = screenBounds;
     if (modalImageView != nil) modalImageView.frame = screenBounds;
+
+    [self unloadInvisiblePages];
     
     for (unsigned i = 0; i < kNumberOfPages; i++) {
         WebViewController *controller = [viewControllers objectAtIndex:i];
@@ -153,7 +163,7 @@ static NSUInteger kNumberOfPages = 11;
 {
     for (int i = 0; i < kNumberOfPages; i++)
     {
-        if (i < pageControl.currentPage - 1 || i > pageControl.currentPage + 1)
+        if (i != pageControl.currentPage)
         {
             WebViewController *controller = [viewControllers objectAtIndex:i];
             if ((NSNull *)controller != [NSNull null])
@@ -189,7 +199,7 @@ static NSUInteger kNumberOfPages = 11;
     [self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
     [self loadScrollViewWithPage:page + 1];
-    [self unloadInvisiblePages];
+    //[self unloadInvisiblePages];
 }
 
 // Данный метод вызывается, когда UIWebView собирается выполнить запрос.
@@ -278,7 +288,7 @@ static NSUInteger kNumberOfPages = 11;
     [self loadScrollViewWithPage:page + 1];
     
     pageControl.currentPage = page;
-    [self unloadInvisiblePages];
+    //[self unloadInvisiblePages];
 
     CGRect frame = scrollView.frame;
     frame.origin.x = frame.size.width * page;
