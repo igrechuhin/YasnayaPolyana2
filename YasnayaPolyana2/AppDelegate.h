@@ -22,6 +22,7 @@
     ModalImageView *modalImageView;
     BOOL pageControlUsed;
     BOOL justLoaded;
+    UIDeviceOrientation previousOrientation;
 }
 
 @property (strong, nonatomic) UIWindow *window;

@@ -90,12 +90,6 @@ static NSUInteger kNumberOfPages = 11;
 
 - (void)deviceOrientationDidChanged:(NSNotification*)note
 {
-    if (justLoaded)
-    {
-        justLoaded = NO;
-        return;
-    }
-    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     UIDeviceOrientation deviceOrientation = [[note object] orientation];
     if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
@@ -105,7 +99,19 @@ static NSUInteger kNumberOfPages = 11;
     else if (!UIDeviceOrientationIsPortrait(deviceOrientation)) {
         return;
     }
-
+    
+    if (justLoaded)
+    {
+        justLoaded = NO;
+        previousOrientation = deviceOrientation;
+        return;
+    }
+    
+    if (previousOrientation == deviceOrientation)
+    {
+        return;
+    }
+    
     // устанавливаем флаг, чтобы игнорировать события скроллинга во время поворота экрана
     pageControlUsed = YES;
     
@@ -129,6 +135,8 @@ static NSUInteger kNumberOfPages = 11;
     //чтобы это исправить - переходим на текущую страницу без анимации
     [self changeToCurrentPageAnimated:NO];
     pageControlUsed = NO;
+    
+    previousOrientation = deviceOrientation;
 }
 
 - (void)mediaPlayerDidExitFullScreen:(NSNotification*)note
