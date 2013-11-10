@@ -177,25 +177,3 @@ function stopSoundOnLeave()
         soundIsStopped(window.playingTrack);
     }
 }
-
-function showMGImg()
-{
-    var i = document.getElementById('mg-img');
-    switch (window.orientation)
-    {
-        case 0:
-        case 180:
-            i.src = "image/mg_v.gif";
-            break;
-        case 90:
-        case -90:
-            i.src = "image/mg_h.gif";
-            break;
-    }
-}
-
-function changeMGImg(o)
-{
-    var i = document.getElementById('mg-img');
-    i.src = "image/mg_" + o + ".gif";
-}

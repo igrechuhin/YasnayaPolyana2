@@ -1,4 +1,26 @@
 body {
 	width: 2048px;
 	height: 1536px;
+    background-image: url(../image/mg_h.gif);
+}
+
+img#lj-icon {
+    position: absolute;
+    top: 500px;
+    left: 120px;
+    width: 80px;
+}
+
+img#fb-icon {
+    position: absolute;
+    top: 500px;
+    left: 220px;
+    width: 80px;
+}
+
+img#vk-icon {
+    position: absolute;
+    top: 500px;
+    left: 320px;
+    width: 80px;
 }

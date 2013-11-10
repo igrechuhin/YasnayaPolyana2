@@ -1,9 +1,26 @@
 body {
 	width: 1536px;
 	height: 2048px;
+    background-image: url(../image/mg_v.gif);
 }
 
-img.socials {
-    widht: 160px;
-    z-index: 999;
+img#lj-icon {
+    position: absolute;
+    top: 1850px;
+    left: 100px;
+    width: 80px;
+}
+
+img#fb-icon {
+    position: absolute;
+    top: 1850px;
+    left: 200px;
+    width: 80px;
+}
+
+img#vk-icon {
+    position: absolute;
+    top: 1850px;
+    left: 300px;
+    width: 80px;
 }

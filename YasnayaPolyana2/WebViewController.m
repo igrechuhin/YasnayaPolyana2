@@ -73,20 +73,6 @@
     }
     screenBounds.origin.x = screenBounds.size.width * pageNumber;
     self.view.frame = screenBounds;
-    
-    // На странице музейного гида меняем гиф на нужный
-    // Ту же функцию можно вызвать и прямо в js, но тогда картинка
-    // меняется уже после поворотной анимации, что некрасиво :)
-    if (pageNumber == 9)
-    {
-        if (UIDeviceOrientationIsLandscape(orientation)) {
-            [webView stringByEvaluatingJavaScriptFromString:@"changeMGImg('h');"];
-        }
-        else
-        {
-            [webView stringByEvaluatingJavaScriptFromString:@"changeMGImg('v');"];
-        }
-    }
 }
 
 // Это нужно, чтобы запретить зум страниц
