@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5B6FF2C4-868D-4AA3-8A92-53A63AFC8FC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ясная Поляна</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0156F67C-15C0-416C-99A5-5C25811D1816</key>
+		<string>https://github.com/valisss/YasnayaPolyana2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Ясная Поляна.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0156F67C-15C0-416C-99A5-5C25811D1816</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/valisss/YasnayaPolyana2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0156F67C-15C0-416C-99A5-5C25811D1816</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0156F67C-15C0-416C-99A5-5C25811D1816</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YasnayaPolyana2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
